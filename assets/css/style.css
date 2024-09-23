@@ -106,7 +106,7 @@ a, textarea, input, p, td, thead, th, label, legend {
 }
 
 *:focus {
-    outline: aqua solid medium;
+    outline: orange solid medium;
 }
 
 #canbecontactedagain, #radio1, #radio2, #radio3, #radio4 {
