@@ -37,7 +37,12 @@ nav {
 }
 
 .submit:hover {
-    background-color: rgba(240, 240, 240, 1);
+    background-color: orange;
+}
+
+.require {
+    color: #FFA8A8;
+    font-weight: bolder;
 }
 
 .important {
@@ -96,7 +101,7 @@ h3 {
     font-size: 60px;
 }
 
-a, textarea, input, p, td, thead, th, label {
+a, textarea, input, p, td, thead, th, label, legend {
     font-size: 42px;
 }
 
@@ -185,7 +190,12 @@ input:required:valid, textarea:required:invalid {
 }
 
 input:optional {
-    background-color: lightgray;
+    background-color: darkgray;
+}
+
+input.submit {
+    text-decoration: underline;
+    background-color: darkorange;
 }
 
 input:checked {
@@ -217,6 +227,11 @@ footer .footer {
     flex-direction: column;
     gap: 30px;
     margin-bottom: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
 }
 
 a.backtotop {
@@ -266,7 +281,7 @@ input[type="checkbox"] {
         font-size: 42px;
     }
 
-    a, textarea, input, p, td, thead, th, label {
+    a, textarea, input, p, td, thead, th, label, legend {
         font-size: 32px;
     }
 
@@ -304,7 +319,7 @@ input[type="checkbox"] {
         font-size: 34px;
     }
 
-    a, textarea, input, p, td, thead, th, label {
+    a, textarea, input, p, td, thead, th, label, legend {
         font-size: 26px;
     }
 }

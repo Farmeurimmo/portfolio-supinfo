@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Robin MASSONNAT</title>
+    <title>Portfolio de MASSONNAT Robin</title>
     <link href="assets/css/style.css" rel="stylesheet">
 </head>
 <body>
@@ -143,6 +143,7 @@
 
 <section id="contact">
     <h2>Me contacter</h2>
+    <h3><strong class="require">*</strong> signifie que le champ est requis.</h3>
     <form action="https://api.web3forms.com/submit" method="POST">
 
         <input name="access_key" type="hidden" value="00572e2f-f2e8-4512-b062-1d762b113365">
@@ -150,42 +151,45 @@
         <div class="form-wrapper">
             <div class="info-wrapper">
                 <div class="form-group">
-                    <label for="fname">Prénom:</label><br>
-                    <input id="fname" name="fname" placeholder="Robin" required type="text">
+                    <label for="fname">Prénom<strong class="require">*</strong></label>
+                    <input autocomplete="given-name" id="fname" name="first-name" required type="text">
                 </div>
                 <div class="form-group">
-                    <label for="lname">Nom de famille:</label><br>
-                    <input id="lname" name="lname" placeholder="Massonnat" required type="text">
+                    <label for="lname">Nom de famille<strong class="require">*</strong></label>
+                    <input autocomplete="family-name" id="lname" name="last-name" required type="text">
                 </div>
                 <div class="form-group">
-                    <label for="phone">Numéro de téléphone:</label><br>
-                    <input id="phone" name="Téléphone" placeholder="0712345678" required type="text">
+                    <label for="phone">Numéro de téléphone</label>
+                    <input autocomplete="tel" id="phone" name="phone" type="text">
                 </div>
                 <div class="form-group">
-                    <label for="mail">Adresse mail:</label><br>
-                    <input id="mail" name="Mail" placeholder="mail@domaine.fr" required type="text">
+                    <label for="mail">Adresse mail<strong class="require">*</strong></label>
+                    <input autocomplete="email" id="mail" name="email" required type="text">
                 </div>
-                <div class="form-group">
-                    <input id="radio1" name="contact-type" type="radio">
-                    <label for="radio1">Un projet</label>
-                </div>
-                <div class="form-group">
-                    <input id="radio2" name="contact-type" type="radio">
-                    <label for="radio2">Une offre d'emploi</label>
-                </div>
-                <div class="form-group">
-                    <input id="radio3" name="contact-type" type="radio">
-                    <label for="radio3">Un problème avec le site</label>
-                </div>
-                <div class="form-group">
-                    <input id="canbecontactedagain" name="Me recontacter" type="checkbox">
+                <fieldset>
+                    <legend>Pour quelle raison me contactez-vous ?<strong class="require">*</strong></legend>
+                    <div>
+                        <input autocomplete="off" id="radio1" name="contact-raison" type="radio">
+                        <label for="radio1">Un projet</label>
+                    </div>
+                    <div>
+                        <input autocomplete="off" id="radio2" name="contact-raison" type="radio">
+                        <label for="radio2">Une offre d'emploi</label>
+                    </div>
+                    <div>
+                        <input autocomplete="off" id="radio3" name="contact-raison" type="radio">
+                        <label for="radio3">Un problème avec le site</label>
+                    </div>
+                </fieldset>
+                <div>
+                    <input autocomplete="off" id="canbecontactedagain" name="Me recontacter" type="checkbox">
                     <label for="canbecontactedagain">Je souhaite être recontacté</label>
                 </div>
             </div>
             <div class="message-wrapper">
                 <div class="form-group">
-                    <label for="message">Votre message</label><br>
-                    <textarea id="message" name="Message" placeholder="Bonjour, je ..." required
+                    <label for="message">Votre message<strong class="require">*</strong></label>
+                    <textarea id="message" name="Message" placeholder="Bonjour, je souhaite" required
                               rows="15"></textarea>
                 </div>
                 <div class="form-group">
