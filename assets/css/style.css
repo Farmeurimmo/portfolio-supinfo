@@ -264,11 +264,6 @@ input[type="checkbox"], input[type="radio"] {
         flex-direction: row;
     }
 
-    #a-propos {
-        flex-direction: row;
-        gap: 50px;
-    }
-
     h1 {
         font-size: 62px;
     }
@@ -305,6 +300,11 @@ input[type="checkbox"], input[type="radio"] {
 
     .form-wrapper {
         flex-direction: row;
+    }
+
+    #a-propos {
+        flex-direction: row;
+        gap: 50px;
     }
 
     h1 {
