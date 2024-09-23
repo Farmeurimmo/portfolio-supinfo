@@ -241,7 +241,7 @@ a.backtotop {
     background-color: var(--main-bg-color-padded-elements);
 }
 
-.info-wrapper {
+.info-wrapper, .message-wrapper {
     display: flex;
     flex-direction: column;
     gap: 15px;
