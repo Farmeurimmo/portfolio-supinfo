@@ -109,7 +109,7 @@ a, textarea, input, p, td, thead, th, label, legend {
     outline: aqua solid medium;
 }
 
-#canbecontactedagain, #radio1, #radio2, #radio3 {
+#canbecontactedagain, #radio1, #radio2, #radio3, #radio4 {
     width: unset;
 }
 
@@ -251,7 +251,7 @@ a.backtotop:hover {
     background-color: var(--main-bg-hover);
 }
 
-input[type="checkbox"] {
+input[type="checkbox"], input[type="radio"] {
     zoom: 2;
 }
 
